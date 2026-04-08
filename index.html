@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Darkyn</title>
+
+<style>
+body {
+    margin: 0;
+    background: black;
+    color: white;
+    font-family: "Roboto", sans-serif;
+}
+
+main {
+    max-width: 1200px;
+    margin: auto;
+}
+
+header {
+    margin: 20px;
+    padding: 12px 20px;
+    background: black;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo {
+    font-family: "Orbitron", sans-serif;
+    font-size: 28px;
+    font-weight: 900;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+li:hover {
+    opacity: 1;
+}
+
+#hero {
+    position: relative;
+    height: 650px;
+    margin-top: 50px;
+    font-family: "Orbitron", sans-serif;
+}
+
+#hero::before {
+    content: "";
+    position: absolute;
+    width: 700px;
+    height: 700px;
+    top: 0;
+    left: 250px;
+    z-index: -1;
+}
+
+#hero h1 {
+    font-family: "Orbitron", sans-serif;
+    font-size: 140px;
+    font-weight: 900;
+    margin: 0;
+}
+
+.left {
+    position: absolute;
+    top: 120px;
+    left: 0;
+}
+
+.right {
+    position: absolute;
+    bottom: 40px;
+    right: 0;
+}
+
+.content {
+    position: absolute;
+    top: 170px;
+    left: 320px;
+    max-width: 350px;
+    line-height: 1.6;
+}
+
+.content a {
+    display: inline-block;
+    margin-top: 10px;
+    color: white;
+    text-decoration: none;
+    border-bottom: 1px solid white;
+}
+
+.tagline {
+    position: absolute;
+    bottom: 120px;
+    left: 320px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.tagline span {
+    width: 4px;
+    height: 40px;
+    background: orange;
+}
+
+.tagline p {
+    margin: 0;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 50px;
+}
+
+.stat-box {
+    background-color: darkblue;
+    color: white;
+    width: 22%;
+    padding: 30px;
+    text-align: left;
+    border-radius: 10px;
+    font-size: 24px;
+    position: relative;
+}
+
+.stat-box span {
+    font-size: 50px;
+    font-weight: 900;
+    display: block;
+}
+
+.stat-box p {
+    margin-top: 10px;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.dot {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+
+.orange {
+    background-color: orange;
+}
+
+.gray {
+    background-color: gray;
+}
+</style>
+</head>
+<body>
+<main>
+<header>
+    <div id="logo">DARKYN.</div>
+    <ul>
+        <li>HOME</li>
+        <li>ABOUT</li>
+        <li>WORK</li>
+        <li>BLOG</li>
+        <li>CONTACT</li>
+    </ul>
+</header>
+
+<section id="hero">
+    <h1 class="left">AIM</h1>
+
+    <div class="content">
+        <p>
+            We are a creative agency committed to delivering innovative
+            solutions, from concept to execution, ensuring your brand’s success and growth.
+        </p>
+        <a href="#">Projects →</a>
+    </div>
+
+    <h1 class="right">SKY</h1>
+
+    <div class="tagline">
+        <span></span>
+        <p>WHERE INNOVATION MEETS DESIGN.</p>
+    </div>
+</section>
+
+<section class="stats">
+    <div class="stat-box">
+        <span>15+</span>
+        <p>Numbers And Facts</p>
+        <span class="dot orange"></span>
+    </div>
+</section>
+</main>
+</body>
+</html>
